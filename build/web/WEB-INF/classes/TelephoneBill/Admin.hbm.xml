@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="TelephoneBill.Admin" table="ADMIN">
+           <id name="adminid" column="ADMINID" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property name="adminuname" column="ADMINUNAME" type="string"/>
+        <property name="adminpwd" column="ADMINPWD" type="string"/>
+  </class>
+</hibernate-mapping>

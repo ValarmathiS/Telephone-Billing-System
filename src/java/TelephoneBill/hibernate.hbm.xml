@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="TelephoneBill.Customer" table="CUSTOMER">
+      <id name="custid" column="CUSTID">
+          <generator class="increment"/>
+      </id>
+      <property name="cname" column="CNAME" type="string"/>
+      <property name="username" column="USERNAME" type="string"/>
+      <property name="password" column="PASSWORD" type="string"/>
+      <property name="address" column="ADDRESS" type="string"/>
+      <property name="phoneno" column="PHONENO" type="string"/>
+  </class>
+</hibernate-mapping>

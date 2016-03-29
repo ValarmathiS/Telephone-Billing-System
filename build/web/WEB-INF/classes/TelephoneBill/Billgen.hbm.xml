@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="TelephoneBill.GenerateBill" table="BILLGEN">
+       <id name="billno" column="billno" type="integer">
+        <generator class="increment"/>        
+   </id>
+   <property name="phoneno" column="PHONENO" type="string"/>
+   <property name="duedate" column="DUEDATE" type="string"/>
+   <property name="paiddate" column="PAIDDATE" type="string"/>
+   <property name="callusage" column="CALLUSAGE" type="integer"/>
+   <property name="amount" column="AMOUNT" type="integer"/>
+   <property name="custid" column="CUSTID" type="integer"/>
+  </class>
+</hibernate-mapping>
